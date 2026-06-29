@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import "tailwindcss";
+@source "./";
+
+
+@theme {
+  --color-hocco-pink: #FF6B9D;
+  --color-hocco-yellow: #FFD93D;
+  --color-hocco-purple: #6C63FF;
+  --color-hocco-primary: #1A1A2E;
+}
+
+@layer base {
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf7e7;
+  }
+}
+
+.poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

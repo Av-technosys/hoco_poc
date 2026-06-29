@@ -18,6 +18,8 @@ const HOCCO_CATALOG = {
         {
           id: 1,
           name: "Cookies & Cream Cone",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/cookies_and_cream_corn.png",
           packSize: "135 ml",
           mrp: 100,
           description:
@@ -26,6 +28,8 @@ const HOCCO_CATALOG = {
         {
           id: 2,
           name: "Hazelnut Mudslide Cone",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/hazelnut-mudslide-cone.png",
           packSize: "135 ml",
           mrp: 100,
           description:
@@ -34,6 +38,8 @@ const HOCCO_CATALOG = {
         {
           id: 3,
           name: "Strawberry Cheesecake Cone",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/strawberry-cheesecake-cone.png",
           packSize: "135 ml",
           mrp: 90,
           description:
@@ -42,6 +48,8 @@ const HOCCO_CATALOG = {
         {
           id: 4,
           name: "Chillo Dark Chocolate Cone",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/chillo-dark-chocolate-cone.png",
           packSize: "135 ml",
           mrp: 90,
           description:
@@ -50,6 +58,8 @@ const HOCCO_CATALOG = {
         {
           id: 5,
           name: "Chillo Kesar Pista Cone",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/chillo-kesar-pista-cone.png",
           packSize: "135 ml",
           mrp: 90,
           description:
@@ -64,6 +74,8 @@ const HOCCO_CATALOG = {
         {
           id: 6,
           name: "Aamchi Mango Cup",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/aamchi-mango-cup.png",
           packSize: "120 ml",
           mrp: 200,
           description:
@@ -72,6 +84,8 @@ const HOCCO_CATALOG = {
         {
           id: 7,
           name: "Belgian Choconut Cup",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/belgian-choconut-cup.png",
           packSize: "120 ml",
           mrp: 200,
           description:
@@ -80,6 +94,8 @@ const HOCCO_CATALOG = {
         {
           id: 8,
           name: "Blueberry Cheesecake Tub",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/blueberry-cheesecake-tub.png",
           packSize: "750 ml",
           mrp: 320,
           description:
@@ -88,6 +104,8 @@ const HOCCO_CATALOG = {
         {
           id: 9,
           name: "Hazelnut Mudslide Tub",
+          image:
+            "https://supex-feedback.s3.ap-south-1.amazonaws.com/hazelnut-mudslide-tub.png",
           packSize: "750 ml",
           mrp: 360,
           description:
@@ -164,7 +182,7 @@ You are Hocco AI Field Rep — a smart, friendly sales agent for Hocco Ice Cream
 You chat with dealers/distributors directly, just like a trusted local field sales rep would.
 
 YOUR PERSONALITY:
-- Talk in Hinglish (natural Hindi + English mix), short WhatsApp-style messages
+- Talk in Hinglish (natural Hindi + English mix) and also languase as which the user talk, short WhatsApp-style messages
 - Be warm, familiar, and proactive — like a rep who knows the dealer personally
 - Use dealer's shop name or mobile number to personalize
 - Be patient, never rush, always helpful — available 24/7
