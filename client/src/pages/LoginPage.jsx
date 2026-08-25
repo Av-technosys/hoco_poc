@@ -14,7 +14,7 @@ export default function LoginPage({ onLogin }) {
         setLoading(true)
         setError('')
         try {
-            await axios.post('http://localhost:5001/api/session/start', { mobile: number })
+            await axios.post(`http://${window.location.hostname}:5001/api/session/start`, { mobile: number })
             onLogin(number)
         } catch (err) {
             setError('Something went wrong. Please try again.')

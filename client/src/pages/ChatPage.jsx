@@ -27,7 +27,7 @@ export default function ChatPage({ mobile }) {
         setMessages(prev => [...prev, { role: 'assistant', content: '', streaming: true }])
 
         try {
-            const response = await fetch('http://localhost:5001/api/chat', {
+            const response = await fetch(`http://${window.location.hostname}:5001/api/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ mobile, message: text, image: imageData }),
