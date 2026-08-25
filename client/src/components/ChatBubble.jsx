@@ -22,7 +22,10 @@ export default function ChatBubble({ message }) {
                         : 'bg-white text-black rounded-bl-sm border border-[#d9effd]'
                     }`}
             >
-                {cleanMarkdown(message.content)}
+                {message.image && (
+                    <img src={message.image} alt="Attached" className="max-w-full h-auto rounded-xl mb-2 shadow-sm" />
+                )}
+                {message.content ? cleanMarkdown(message.content) : ''}
                 {message.streaming && (
                     <span className="inline-block w-2 h-4 bg-gray-300 ml-1 animate-pulse rounded-sm" />
                 )}

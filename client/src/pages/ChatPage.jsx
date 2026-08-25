@@ -16,10 +16,10 @@ export default function ChatPage({ mobile }) {
         bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
     }, [messages])
 
-    const sendMessage = async (text) => {
-        if (!text.trim() || loading) return
+    const sendMessage = async (text, imageData = null) => {
+        if ((!text.trim() && !imageData) || loading) return
 
-        const userMsg = { role: 'user', content: text }
+        const userMsg = { role: 'user', content: text, image: imageData }
         setMessages(prev => [...prev, userMsg])
         setLoading(true)
 
@@ -27,10 +27,10 @@ export default function ChatPage({ mobile }) {
         setMessages(prev => [...prev, { role: 'assistant', content: '', streaming: true }])
 
         try {
-            const response = await fetch('http://localhost:5000/api/chat', {
+            const response = await fetch('http://localhost:5001/api/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ mobile, message: text }),
+                body: JSON.stringify({ mobile, message: text, image: imageData }),
             })
 
             const reader = response.body.getReader()
